@@ -1,11 +1,18 @@
-import { Box } from "@chakra-ui/react";
-import Header from "../components/layouts/Header";
+import Header from "../components/layouts/header";
+import Banner from "../components/layouts/banner";
+import Footer from "../components/layouts/footer";
+import AboutSection from "./components/about";
+import Skills from "./components/skill";
 
 const HomePage = () => {
   return (
-    <Box>
+    <div className="bg-white dark:bg-slate-900 text-gray-900 dark:text-gray-200 min-h-screen transition-colors duration-300">
       <Header />
-    </Box>
+      <Banner />
+      <AboutSection />
+      <Skills />
+      <Footer />
+    </div>
   );
 };
 

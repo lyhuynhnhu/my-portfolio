@@ -1,16 +1,12 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import "./App.css";
-import { ColorModeProvider } from "./components/ui/color-mode";
-import system from "./config/theme";
+import { ThemeProvider } from "./context/theme-provider";
 import HomePage from "./pages/HomePage";
+import "./App.css";
 
 function App() {
   return (
-    <ChakraProvider value={system}>
-      <ColorModeProvider>
-        <HomePage />
-      </ColorModeProvider>
-    </ChakraProvider>
+    <ThemeProvider>
+      <HomePage />
+    </ThemeProvider>
   );
 }
 

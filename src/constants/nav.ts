@@ -1,9 +1,9 @@
 const NAV_ITEMS = [
-  { label: "Home", href: "#hero" },
+  { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
-  { label: "Values", href: "#values" },
-  { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
+  // { label: "Values", href: "#values" },
+  { label: "Education", href: "#education" },
   { label: "Experience", href: "#experience" },
 ];
 
