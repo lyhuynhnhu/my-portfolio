@@ -15,6 +15,7 @@ import {
   ts,
   vite,
   vscode,
+  babel,
 } from "../../components/ui/svg";
 import { ReactTestingLib } from "../../constants/image";
 
@@ -40,6 +41,7 @@ const skillsData = {
     { icon: git, name: "Git", level: "Version Control" },
     { icon: npm, name: "NPM", level: "Package Manager" },
     { icon: vite, name: "Vite", level: "Build Tool" },
+    { icon: babel, name: "Babel", level: "JS Compiler" },
     { icon: vscode, name: "VS Code", level: "Code Editor" },
   ],
 };
