@@ -2,48 +2,56 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_ITEMS } from "../../constants/nav";
-import { scrollToSection } from "../../utils/scroll";
 import ThemeToggle from "../ui/theme-toggle";
 
 const Header = () => {
-  // const { colorMode, toggleColorMode } = useColorMode();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHeaderSticky, setIsHeaderSticky] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const headerHeight = 80 // Account for fixed header height
+      const elementPosition = element.offsetTop - headerHeight
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      })
+    }
+    setIsMenuOpen(false)
+  }
+
   // Handle scroll events
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsHeaderSticky(scrollY > 100);
+      const scrollY = window.scrollY
+      setIsHeaderSticky(scrollY > 100)
 
       // Update active section based on scroll position
-      const sections = ["home", "about", "services", "portfolio", "contact"];
-      const sectionElements = sections.map((id) => document.getElementById(id));
+      const sections = ["home", "about", "skills", "services", "portfolio", "contact"]
+      const sectionElements = sections.map((id) => document.getElementById(id))
 
       for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sectionElements[i];
+        const section = sectionElements[i]
         if (section) {
-          const rect = section.getBoundingClientRect();
-          if (rect.top <= 150) {
-            setActiveSection(sections[i]);
-            break;
+          const rect = section.getBoundingClientRect()
+          const headerHeight = 80
+          // Check if section is in view considering header height
+          if (rect.top <= headerHeight + 50 && rect.bottom >= headerHeight) {
+            setActiveSection(sections[i])
+            break
           }
         }
       }
 
       // Close mobile menu on scroll
-      setIsMenuOpen(false);
-    };
+      setIsMenuOpen(false)
+    }
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const handleScroll = (sectionId: string) => {
-    scrollToSection(sectionId);
-    setIsMenuOpen(false);
-  };
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
     <motion.header
@@ -76,7 +84,7 @@ const Header = () => {
         {NAV_ITEMS.map((item) => (
           <motion.button
             key={item.label}
-            onClick={() => handleScroll(item.href)}
+            onClick={() => scrollToSection(item.href)}
             className={`text-lg capitalize transition-colors duration-300 ${
               activeSection === item.href
                 ? "text-cyan-500 dark:text-cyan-400"
