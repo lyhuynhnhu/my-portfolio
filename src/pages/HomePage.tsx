@@ -6,6 +6,7 @@ import Skills from "./components/skill";
 import ScrollProgress from "../components/ui/scroll-progress";
 import EducationSection from "./components/education";
 import WorkExperience from "./components/experience";
+import Project from "./components/project";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       <EducationSection />
       <Skills />
       <WorkExperience />
+      <Project />
       <Footer />
     </div>
   );

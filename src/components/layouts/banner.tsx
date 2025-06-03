@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Button from "../ui/button";
 import TypedText from "../ui/typed-text";
+import { NHU } from "../../constants/image";
 
 const Banner = () => {
   return (
@@ -78,9 +79,9 @@ const Banner = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.img
-            src="/images/home1.png"
-            // src={NHU}
-            alt="Revangga"
+            // src="/images/home1.png"
+            src={NHU}
+            alt="Nhu Ly"
             className="size-60 md:size-80 lg:size-[500px] object-cover border-2 border-cyan-500 dark:border-cyan-400 rounded-full"
             animate={{
               y: [0, -20, 0],
