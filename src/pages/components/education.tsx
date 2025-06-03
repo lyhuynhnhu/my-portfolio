@@ -77,7 +77,9 @@ const EducationSection = () => {
                       </h4>
                       <p className="text-gray-600 dark:text-gray-300 mb-3">Sai Gon University</p>
                       <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                        Studied Software Engineering principles, cross-platform web application development, and database design and management. Developed programming skills through hands-on practical assignments.
+                        Studied Software Engineering principles, cross-platform web application
+                        development, and database design and management. Developed programming
+                        skills through hands-on practical assignments.
                       </p>
                     </div>
                   </div>
@@ -104,33 +106,71 @@ const EducationSection = () => {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="px-8 pb-8">
-                <div className="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-slate-700 dark:to-slate-600 rounded-xl p-6 border-l-4 border-emerald-500">
-                  <div className="flex flex-col md:flex-row md:items-center gap-6">
-                    <div className="flex-shrink-0">
-                      <div className="inline-block px-4 py-2 bg-emerald-500 text-white rounded-full text-sm font-semibold">
-                        2021
+                <div className="space-y-6">
+                  <div className="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-slate-700 dark:to-slate-600 rounded-xl p-6 border-l-4 border-emerald-500">
+                    <div className="flex flex-col md:flex-row md:items-center gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="inline-block px-4 py-2 bg-emerald-500 text-white rounded-full text-sm font-semibold">
+                          2021
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                          ReactJS Training Course in PycoGroup Internship Program
+                        </h4>
+                        <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                          Intensive hands-on training program covering modern React development
+                          practices, Agile methodologies, and effective cross-team collaboration.
+                          Gained practical experience through an internship project and mentorship
+                          from senior developers.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-4">
+                          <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">
+                            JavaScript ES6+
+                          </span>
+                          <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">
+                            React.js
+                          </span>
+                          <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">
+                            Component Design
+                          </span>
+                          <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-full text-xs font-medium">
+                            State Management
+                          </span>
+                        </div>
                       </div>
                     </div>
-                    <div className="flex-1">
-                      <h4 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                        ReactJS Training Course in PycoGroup Internship Program
-                      </h4>
-                      <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                        Intensive hands-on training program covering modern React development practices, Agile methodologies, and effective cross-team collaboration. Gained practical experience through an internship project and mentorship from senior developers.
-                      </p>
-                      <div className="flex flex-wrap gap-2 mt-4">
-                        <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">
-                          JavaScript ES6+
-                        </span>
-                        <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">
-                          React.js
-                        </span>
-                        <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">
-                          Component Design
-                        </span>
-                        <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-700 dark:text-orange-300 rounded-full text-xs font-medium">
-                          State Management
-                        </span>
+                  </div>
+                  <div className="bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-slate-700 dark:to-slate-600 rounded-xl p-6 border-l-4 border-amber-500">
+                    <div className="flex flex-col md:flex-row md:items-center gap-6">
+                      <div className="flex-shrink-0">
+                        <div className="inline-block px-4 py-2 bg-amber-500 text-white rounded-full text-sm font-semibold">
+                          2019
+                        </div>
+                      </div>
+                      <div className="flex-1">
+                        <h4 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                          Javascript Intern at Alax Vietnam
+                        </h4>
+                        <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                          Trained in Node.js, Git, and basics of ReactJS. Built a functional live
+                          data widget with ReactJS to monitor the health status of the CoinMarketCap
+                          website, integrated into the company's product.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-4">
+                          <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300 rounded-full text-xs font-medium">
+                            JavaScript
+                          </span>
+                          <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">
+                            Node.js
+                          </span>
+                          <span className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-xs font-medium">
+                            Git
+                          </span>
+                          <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">
+                            ReactJS
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
