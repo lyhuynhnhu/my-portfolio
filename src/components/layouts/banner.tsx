@@ -1,10 +1,24 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
-import Button from "../ui/button";
 import TypedText from "../ui/typed-text";
 import { NHU } from "../../constants/image";
+import CV from "../../../public/cv_nhuly.pdf";
 
 const Banner = () => {
+  const contactInfo = [
+    {
+      icon: Mail,
+      href: "mailto:lyhuynhnhu200699@gmail.com",
+    },
+    {
+      icon: Github,
+      href: "https://github.com/lyhuynhnhu",
+    },
+    {
+      icon: Linkedin,
+      href: "https://linkedin.com/in/như-lý-976875192/",
+    },
+  ];
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-[9%] pt-28 pb-8">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center w-full max-w-7xl">
@@ -45,15 +59,16 @@ const Banner = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.0 }}
           >
-            {[Mail, Linkedin, Github].map((Icon, index) => (
+            {contactInfo.map((item, index) => (
               <motion.a
                 key={index}
-                href="#"
+                href={item.href}
+                target="_blank"
                 className="w-14 h-14 border-2 border-cyan-500 dark:border-cyan-400 rounded-full flex items-center justify-center text-cyan-500 dark:text-cyan-400 hover:bg-cyan-500 dark:hover:bg-cyan-400 hover:text-white dark:hover:text-slate-800 transition-all duration-300"
                 whileHover={{ scale: 1.1, boxShadow: "0 0 20px rgba(6, 182, 212, 0.5)" }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Icon size={24} />
+                <item.icon size={24} />
               </motion.a>
             ))}
           </motion.div>
@@ -63,12 +78,13 @@ const Banner = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1.2 }}
           >
-            <Button
-              className="bg-cyan-500 dark:bg-cyan-400 text-white dark:text-slate-900 hover:bg-cyan-600 dark:hover:bg-cyan-500 px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-cyan-500/25 dark:hover:shadow-cyan-400/25"
-              asChild
+            <a
+              href={CV}
+              download="LyHuynhNhu_CV.pdf"
+              className="inline-block bg-cyan-500 dark:bg-cyan-400 text-white dark:text-slate-900 hover:bg-cyan-600 dark:hover:bg-cyan-500 px-8 py-3 text-lg font-semibold rounded-full shadow-lg hover:shadow-cyan-500/25 dark:hover:shadow-cyan-400/25 transition-all duration-300"
             >
-              <a href="#">Download CV</a>
-            </Button>
+              Download CV
+            </a>
           </motion.div>
         </motion.div>
 
