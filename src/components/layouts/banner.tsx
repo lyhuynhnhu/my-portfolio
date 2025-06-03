@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
 import TypedText from "../ui/typed-text";
 import { NHU } from "../../constants/image";
-import CV from "../../../public/cv_nhuly.pdf";
+import CV from "../../assets/cv_nhuly.pdf";
 
 const Banner = () => {
   const contactInfo = [
@@ -19,6 +19,7 @@ const Banner = () => {
       href: "https://linkedin.com/in/như-lý-976875192/",
     },
   ];
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-[9%] pt-28 pb-8">
       <div className="flex flex-col-reverse md:flex-row items-center justify-center w-full max-w-7xl">
