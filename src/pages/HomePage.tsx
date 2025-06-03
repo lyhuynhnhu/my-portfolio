@@ -5,6 +5,7 @@ import AboutSection from "./components/about";
 import Skills from "./components/skill";
 import ScrollProgress from "../components/ui/scroll-progress";
 import EducationSection from "./components/education";
+import WorkExperience from "./components/experience";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <AboutSection />
       <EducationSection />
       <Skills />
+      <WorkExperience />
       <Footer />
     </div>
   );
