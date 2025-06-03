@@ -27,8 +27,7 @@ const Project = () => {
             My <span className="text-cyan-500 dark:text-cyan-400">Projects</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A showcase of my recent work and personal projects that demonstrate my skills and
-            creativity
+            Explore the projects I've worked on so far
           </p>
         </motion.div>
 
