@@ -29,7 +29,7 @@ const Header = () => {
       setIsHeaderSticky(scrollY > 100)
 
       // Update active section based on scroll position
-      const sections = ["home", "about", "skills", "services", "portfolio", "contact"]
+      const sections = NAV_ITEMS.map((item) => item.href);
       const sectionElements = sections.map((id) => document.getElementById(id))
 
       for (let i = sections.length - 1; i >= 0; i--) {

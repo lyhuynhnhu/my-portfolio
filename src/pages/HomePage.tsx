@@ -4,6 +4,7 @@ import Footer from "../components/layouts/footer";
 import AboutSection from "./components/about";
 import Skills from "./components/skill";
 import ScrollProgress from "../components/ui/scroll-progress";
+import EducationSection from "./components/education";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <Header />
       <Banner />
       <AboutSection />
+      <EducationSection />
       <Skills />
       <Footer />
     </div>

@@ -91,7 +91,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="min-h-screen flex flex-col items-center justify-center px-[9%] py-28 bg-gray-50 dark:bg-slate-800"
+      className="min-h-screen flex flex-col items-center justify-center px-[9%] py-24 bg-gray-50 dark:bg-slate-800"
     >
       <motion.h2
         className="text-4xl md:text-6xl font-bold mb-20 text-center"

@@ -99,8 +99,8 @@ const bootstrap = (
         gradientTransform="translate(1.11 14.613) scale(.24566)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#9013fe" />
-        <stop offset="1" stop-color="#6610f2" />
+        <stop offset="0" stopColor="#9013fe" />
+        <stop offset="1" stopColor="#6610f2" />
       </linearGradient>
       <linearGradient
         id="b"
@@ -111,8 +111,8 @@ const bootstrap = (
         gradientTransform="translate(0 52)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#fff" />
-        <stop offset="1" stop-color="#f1e5fc" />
+        <stop offset="0" stopColor="#fff" />
+        <stop offset="1" stopColor="#f1e5fc" />
       </linearGradient>
       <filter
         id="c"
@@ -120,10 +120,10 @@ const bootstrap = (
         height="249"
         x="161.9"
         y="135.46"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
         <feOffset dy="4" />
         <feGaussianBlur stdDeviation="8" />
@@ -232,10 +232,10 @@ const vscode = (
         height="113.408"
         x="-8.41115"
         y="22.5944"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           result="hardAlpha"
@@ -253,10 +253,10 @@ const vscode = (
         height="144.007"
         x="79.6667"
         y="-8.0035"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           result="hardAlpha"
@@ -276,8 +276,8 @@ const vscode = (
         y2="127.67"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#fff" />
-        <stop offset="1" stop-color="#fff" stop-opacity="0" />
+        <stop stopColor="#fff" />
+        <stop offset="1" stopColor="#fff" stop-opacity="0" />
       </linearGradient>
     </defs>
   </svg>
@@ -295,8 +295,8 @@ const vite = (
         gradientTransform="translate(0 .937) scale(.3122)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#41d1ff" />
-        <stop offset="1" stop-color="#bd34fe" />
+        <stop offset="0" stopColor="#41d1ff" />
+        <stop offset="1" stopColor="#bd34fe" />
       </linearGradient>
       <linearGradient
         id="b"
@@ -307,9 +307,9 @@ const vite = (
         gradientTransform="translate(0 .937) scale(.3122)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#ffea83" />
-        <stop offset=".083" stop-color="#ffdd35" />
-        <stop offset="1" stop-color="#ffa800" />
+        <stop offset="0" stopColor="#ffea83" />
+        <stop offset=".083" stopColor="#ffdd35" />
+        <stop offset="1" stopColor="#ffa800" />
       </linearGradient>
     </defs>
     <path
