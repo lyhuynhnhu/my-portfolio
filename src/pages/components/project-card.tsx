@@ -33,11 +33,11 @@ const ProjectCard = ({
       whileHover={{ y: -8 }}
     >
       {/* Project Image */}
-      <div className="relative aspect-video overflow-hidden bg-slate-700 dark:bg-slate-800">
+      <div className="relative aspect-video overflow-hidden bg-slate-700 dark:bg-slate-800 px-8 py-5">
         <motion.img
           src={image}
           alt={title}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-contain rounded-2xl group-hover:scale-105 transition-all duration-500"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.5 }}
         />
@@ -78,7 +78,7 @@ const ProjectCard = ({
       {/* Project Content */}
       <div className="p-6">
         <motion.h3
-          className="text-xl font-bold text-white mb-3"
+          className="text-lg font-bold text-white mb-3"
           initial={{ opacity: 0.8 }}
           animate={{ opacity: isHovered ? 1 : 0.8 }}
         >
