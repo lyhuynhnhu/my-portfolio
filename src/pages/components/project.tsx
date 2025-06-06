@@ -24,7 +24,7 @@ const Project = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl md:text-6xl font-bold mb-4">
-            My <span className="text-cyan-500 dark:text-cyan-400">Projects</span>
+            My Recent <span className="text-cyan-500 dark:text-cyan-400">Projects</span>
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Explore the projects I've worked on so far
