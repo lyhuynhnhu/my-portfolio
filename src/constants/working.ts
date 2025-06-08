@@ -5,17 +5,19 @@ const workExperience = [
     location: "Ho Chi Minh City, Vietnam",
     period: "Oct 2022 - Present",
     responsibilities: [
-      "Developed and implemented UI functionalities for product traceability and water industry projects",
-      "Collaborated with BA team and designers to align UI design with business objectives",
-      "Worked closely with backend engineers on API integration and third-party services",
+      "Developing and implementing UI functionalities for product traceability, e-commerce and water industry projects",
+      "Collaborating with BA team and designers to align UI design with business objectives",
+      "Working closely with backend engineers on API integration and third-party services",
     ],
     technologies: [
       "ReactJS",
       "TypeScript",
       "Tailwind CSS",
-      "Next.js",
+      "Material UI",
+      "React Query",
       "Redux",
       "Redux Toolkit",
+      "Next.js",
       "React Native",
       "AI Tools",
     ],
@@ -30,7 +32,8 @@ const workExperience = [
     location: "Ho Chi Minh City, Vietnam",
     period: "Jun 2021 - Sep 2022",
     responsibilities: [
-      "Contributed to company projects by implementing and managing front-end development tasks",
+      "Implemented user interfaces and handled front-end issues",
+      "Collaborated with back-end developers to integrate APIs",
     ],
     technologies: [
       "ReactJS",
@@ -41,8 +44,8 @@ const workExperience = [
       "React Sweet State",
       "Formik",
       "Axios",
-      "React Testing Library",
       "Jest",
+      "React Testing Library",
     ],
     achievements: [
       "Enhanced programming skills, resulting in higher quality and more maintainable code",

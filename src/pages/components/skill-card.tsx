@@ -1,7 +1,17 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const SkillCard = ({ icon, name, delay = 0 }: { icon: any; name: string; delay?: number }) => {
+const SkillCard = ({
+  icon,
+  name,
+  description,
+  delay = 0,
+}: {
+  icon: any;
+  name: string;
+  description: string;
+  delay?: number;
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -22,8 +32,16 @@ const SkillCard = ({ icon, name, delay = 0 }: { icon: any; name: string; delay?:
 
       <div className="relative z-10 flex items-center gap-4">
         <div className="text-4xl w-9">{icon}</div>
-        <div className="">
+        <div className="flex-1">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{name}</h3>
+          <motion.p
+            className="text-sm font-medium text-cyan-600 dark:text-cyan-400"
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 10 }}
+            transition={{ duration: 0.2 }}
+          >
+            {description}
+          </motion.p>
         </div>
       </div>
     </motion.div>

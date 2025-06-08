@@ -16,34 +16,42 @@ import {
   vite,
   vscode,
   babel,
+  materialUI,
+  nextjs,
+  jira,
+  yarn,
 } from "../../components/ui/svg";
 import { ReactTestingLib } from "../../constants/image";
 import SkillCard from "./skill-card";
 
 const skillsData = {
   tech: [
-    { icon: html, name: "HTML", level: "Expert" },
-    { icon: css, name: "CSS", level: "Stylesheet Language" },
-    { icon: js, name: "JavaScript", level: "" },
-    { icon: ts, name: "TypeScript", level: "" },
-    { icon: react, name: "React", level: "JS Library for UI" },
-    { icon: tailwind, name: "Tailwind CSS", level: "" },
-    { icon: bootstrap, name: "Bootstrap", level: "Advanced" },
-    { icon: node, name: "Node.js", level: "JS Runtime" },
-    { icon: redux, name: "Redux", level: "State Management" },
-    { icon: jest, name: "Jest", level: "Test Framework" },
+    { icon: html, name: "HTML", description: "Markup Language" },
+    { icon: css, name: "CSS", description: "Stylesheet Language" },
+    { icon: js, name: "JavaScript", description: "Programming Language" },
+    { icon: ts, name: "TypeScript", description: "Programming Language" },
+    { icon: react, name: "React", description: "JS Library for UI" },
+    { icon: tailwind, name: "Tailwind CSS", description: "CSS Framework" },
+    { icon: bootstrap, name: "Bootstrap", description: "CSS Framework" },
+    { icon: materialUI, name: "Material UI", description: "UI Component Library" },
+    { icon: redux, name: "Redux", description: "State Management Library" },
+    { icon: node, name: "Node.js", description: "JS Runtime" },
+    { icon: nextjs, name: "Next.js", description: "JS Framework" },
+    { icon: jest, name: "Jest", description: "Testing Framework" },
     {
       icon: <img src={ReactTestingLib} alt="React Testing Library" />,
       name: "React Testing Library",
-      level: "Intermediate",
+      description: "Testing Library",
     },
   ],
   tools: [
-    { icon: git, name: "Git", level: "Version Control" },
-    { icon: npm, name: "NPM", level: "Package Manager" },
-    { icon: vite, name: "Vite", level: "Build Tool" },
-    { icon: babel, name: "Babel", level: "JS Compiler" },
-    { icon: vscode, name: "VS Code", level: "Code Editor" },
+    { icon: git, name: "Git", description: "Version Control" },
+    { icon: npm, name: "NPM", description: "Package Manager" },
+    { icon: yarn, name: "Yarn", description: "Package Manager" },
+    { icon: vite, name: "Vite", description: "Build Tool" },
+    { icon: babel, name: "Babel", description: "JS Compiler" },
+    { icon: jira, name: "Jira", description: "Project Management" },
+    { icon: vscode, name: "VS Code", description: "Code Editor" },
   ],
 };
 
@@ -115,7 +123,13 @@ const Skills = () => {
             transition={{ duration: 0.5 }}
           >
             {list.map((skill, index) => (
-              <SkillCard key={skill.name} icon={skill.icon} name={skill.name} delay={index * 0.1} />
+              <SkillCard
+                key={skill.name}
+                icon={skill.icon}
+                name={skill.name}
+                description={skill.description}
+                delay={index * 0.1}
+              />
             ))}
           </motion.div>
         </AnimatePresence>
