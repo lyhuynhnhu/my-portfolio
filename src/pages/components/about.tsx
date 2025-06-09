@@ -91,7 +91,7 @@ const AboutSection = () => {
             About <span className="text-cyan-500 dark:text-cyan-400">Me</span>
           </h2>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            Highly motivated front-end developer with 3+ years of experience building responsive and
+            Highly motivated front-end developer with 4 years of experience building responsive and
             user-friendly websites.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
