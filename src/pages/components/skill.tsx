@@ -7,7 +7,6 @@ import {
   html,
   jest,
   js,
-  node,
   npm,
   react,
   redux,
