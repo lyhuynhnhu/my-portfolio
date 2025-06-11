@@ -1,50 +1,29 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-
 const SkillCard = ({
   icon,
   name,
   description,
-  delay = 0,
 }: {
   icon: any;
   name: string;
   description: string;
   delay?: number;
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
-    <motion.div
-      className="relative group border-2 border-gray-300 dark:border-slate-600 rounded-xl p-6 bg-white dark:bg-slate-800 hover:border-cyan-500 dark:hover:border-cyan-400 transition-all duration-300 cursor-pointer overflow-hidden"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
-      whileHover={{ scale: 1.05 }}
-    >
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-cyan-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        initial={false}
-        animate={{ opacity: isHovered ? 1 : 0 }}
-      />
-
-      <div className="relative z-10 flex items-center gap-4">
-        <div className="text-4xl w-9">{icon}</div>
-        <div className="flex-1">
-          <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-1">{name}</h3>
-          <motion.p
-            className="text-sm font-medium text-cyan-600 dark:text-cyan-400"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 10 }}
-            transition={{ duration: 0.2 }}
-          >
-            {description}
-          </motion.p>
+    <div className="item-tech flex cursor-pointer overflow-hidden items-center gap-2 rounded-lg border-2 border-gray-300 dark:border-slate-600 p-3 bg-white dark:bg-slate-800 hover:border-cyan-500 dark:hover:border-cyan-400 hover:bg-gradient-to-br hover:from-cyan-500/10 hover:to-cyan-400/10 hover:bg-opacity-10 dark:hover:bg-opacity-10 md:gap-3 lg:px-4">
+      <div className="flex h-12 w-12 items-center justify-center p-0 lg:h-16 lg:w-16 lg:p-2 cursor-zoom-in">
+        <div className="img-tech drop-shadow-xl transition-all duration-300 h-[65%] w-[65%] lg:h-[75%] lg:w-[75%]">
+          {icon}
         </div>
       </div>
-    </motion.div>
+      <div className="flex items-center text-sm md:text-base lg:text-lg">
+        <div className="tech font-medium text-secondary transition-all duration-300 translate-y-0">
+          {name}
+        </div>
+        <div className="status-tech opacity-0 absolute mt-5 text-[10px] text-cyan-200 transition-all duration-300 md:text-xs lg:text-sm">
+          {description}
+        </div>
+      </div>
+    </div>
   );
 };
 

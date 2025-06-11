@@ -20,14 +20,16 @@ import {
   nextjs,
   jira,
   yarn,
+  sass,
 } from "../../components/ui/svg";
-import { ReactTestingLib } from "../../constants/image";
+import { Formik, ReactQuery, ReactTestingLib } from "../../constants/image";
 import SkillCard from "./skill-card";
 
 const skillsData = {
   tech: [
     { icon: html, name: "HTML", description: "Markup Language" },
     { icon: css, name: "CSS", description: "Stylesheet Language" },
+    { icon: sass, name: "SASS/SCSS", description: "CSS Preprocessor" },
     { icon: js, name: "JavaScript", description: "Programming Language" },
     { icon: ts, name: "TypeScript", description: "Programming Language" },
     { icon: react, name: "React", description: "JS Library for UI" },
@@ -35,7 +37,16 @@ const skillsData = {
     { icon: bootstrap, name: "Bootstrap", description: "CSS Framework" },
     { icon: materialUI, name: "Material UI", description: "UI Component Library" },
     { icon: redux, name: "Redux", description: "State Management Library" },
-    { icon: node, name: "Node.js", description: "JS Runtime" },
+    {
+      icon: <img src={ReactQuery} alt="React Query" />,
+      name: "React Query",
+      description: "Data Fetching Library",
+    },
+    {
+      icon: <img src={Formik} alt="Formik" />,
+      name: "Formik",
+      description: "Form Management Library",
+    },
     { icon: nextjs, name: "Next.js", description: "JS Framework" },
     { icon: jest, name: "Jest", description: "Testing Framework" },
     {
