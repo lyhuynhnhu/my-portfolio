@@ -71,7 +71,7 @@ const Header = () => {
       </motion.a>
 
       <div className="flex items-center gap-4">
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <button
           className="text-2xl md:hidden text-gray-900 dark:text-gray-200"
           onClick={() => setIsMenuOpen(!isMenuOpen)}

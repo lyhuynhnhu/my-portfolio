@@ -1,4 +1,4 @@
-import Header from "../components/layouts/eader";
+import Header from "../components/layouts/header";
 import Banner from "../components/layouts/banner";
 import Footer from "../components/layouts/footer";
 import AboutSection from "./components/about";
