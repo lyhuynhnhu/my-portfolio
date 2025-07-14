@@ -15,7 +15,6 @@ import {
   vite,
   vscode,
   babel,
-  materialUI,
   nextjs,
   jira,
   yarn,
