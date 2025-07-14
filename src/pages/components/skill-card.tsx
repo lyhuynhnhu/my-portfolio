@@ -15,7 +15,7 @@ const SkillCard = ({
           {icon}
         </div>
       </div>
-      <div className="flex items-center text-sm md:text-base lg:text-lg">
+      <div className="flex items-center text-sm lg:text-md xxl:text-lg">
         <div className="tech font-medium text-secondary transition-all duration-300 translate-y-0">
           {name}
         </div>

@@ -34,7 +34,7 @@ const skillsData = {
     { icon: react, name: "React", description: "JS Library for UI" },
     { icon: tailwind, name: "Tailwind CSS", description: "CSS Framework" },
     { icon: bootstrap, name: "Bootstrap", description: "CSS Framework" },
-    { icon: materialUI, name: "Material UI", description: "UI Component Library" },
+    // { icon: materialUI, name: "Material UI", description: "UI Component Library" },
     { icon: redux, name: "Redux", description: "State Management Library" },
     {
       icon: <img src={ReactQuery} alt="React Query" />,

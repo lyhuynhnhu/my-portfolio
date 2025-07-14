@@ -1,6 +1,6 @@
 const workExperience = [
   {
-    position: "Front-end Developer",
+    position: "Frontend Developer",
     company: "VietNam Blockchain Corporation",
     location: "Ho Chi Minh City, Vietnam",
     period: "Oct 2022 - Present",
@@ -27,7 +27,7 @@ const workExperience = [
     ],
   },
   {
-    position: "Junior Front-end Developer",
+    position: "Junior Frontend Developer",
     company: "Positive Thinking Company",
     location: "Ho Chi Minh City, Vietnam",
     period: "Jun 2021 - Sep 2022",
