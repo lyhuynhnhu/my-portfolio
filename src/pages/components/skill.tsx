@@ -19,7 +19,18 @@ import {
   jira,
   yarn,
   sass,
-} from "../../components/ui/svg";
+  materialUI,
+  confluence,
+  redmine,
+  gitlab,
+  github,
+  claude,
+  cursor,
+  gemini,
+  expo,
+  socket,
+  ant,
+} from "../../components/ui/icons";
 import { Formik, ReactQuery, ReactTestingLib } from "../../constants/image";
 import SkillCard from "./skill-card";
 
@@ -30,10 +41,11 @@ const skillsData = {
     { icon: sass, name: "SASS/SCSS", description: "CSS Preprocessor" },
     { icon: js, name: "JavaScript", description: "Programming Language" },
     { icon: ts, name: "TypeScript", description: "Programming Language" },
-    { icon: react, name: "React", description: "JS Library for UI" },
+    { icon: react, name: "ReactJS", description: "JS Library for UI" },
     { icon: tailwind, name: "Tailwind CSS", description: "CSS Framework" },
     { icon: bootstrap, name: "Bootstrap", description: "CSS Framework" },
-    // { icon: materialUI, name: "Material UI", description: "UI Component Library" },
+    { icon: materialUI, name: "Material UI", description: "UI Component Library" },
+    { icon: ant, name: "Ant Design", description: "UI Component Library" },
     { icon: redux, name: "Redux", description: "State Management Library" },
     {
       icon: <img src={ReactQuery} alt="React Query" />,
@@ -46,6 +58,9 @@ const skillsData = {
       description: "Form Management Library",
     },
     { icon: nextjs, name: "Next.js", description: "JS Framework" },
+    { icon: react, name: "React Native", description: "Mobile App Framework" },
+    { icon: expo, name: "Expo", description: "Build Native Apps" },
+    { icon: socket, name: "Socket.io", description: "Real-time Communication" },
     { icon: jest, name: "Jest", description: "Testing Framework" },
     {
       icon: <img src={ReactTestingLib} alt="React Testing Library" />,
@@ -55,12 +70,19 @@ const skillsData = {
   ],
   tools: [
     { icon: git, name: "Git", description: "Version Control" },
+    { icon: gitlab, name: "GitLab", description: "Version Control" },
+    { icon: github, name: "GitHub", description: "Version Control" },
     { icon: npm, name: "NPM", description: "Package Manager" },
     { icon: yarn, name: "Yarn", description: "Package Manager" },
     { icon: vite, name: "Vite", description: "Build Tool" },
     { icon: babel, name: "Babel", description: "JS Compiler" },
     { icon: jira, name: "Jira", description: "Project Management" },
+    { icon: confluence, name: "Confluence", description: "Knowledge Management" },
+    { icon: redmine, name: "Redmine", description: "Project Management" },
     { icon: vscode, name: "VS Code", description: "Code Editor" },
+    { icon: claude, name: "Claude", description: "AI" },
+    { icon: cursor, name: "Cursor", description: "AI" },
+    { icon: gemini, name: "Gemini", description: "AI" },
   ],
 };
 

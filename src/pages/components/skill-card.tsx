@@ -19,7 +19,7 @@ const SkillCard = ({
         <div className="tech font-medium text-secondary transition-all duration-300 translate-y-0">
           {name}
         </div>
-        <div className="status-tech opacity-0 absolute mt-5 text-[10px] text-cyan-200 transition-all duration-300 md:text-xs lg:text-sm">
+        <div className="status-tech opacity-0 absolute mt-5 text-[10px] text-cyan-500 transition-all duration-300 md:text-xs lg:text-sm">
           {description}
         </div>
       </div>
