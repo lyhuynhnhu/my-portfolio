@@ -46,7 +46,7 @@ const TimelineItem = ({
           <div>
             <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{position}</h3>
             <p className="text-cyan-600 dark:text-cyan-400 font-medium">
-              {company}, {location}
+              {company}{location && ", "} {location}
             </p>
           </div>
           <div className="inline-block px-4 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-cyan-700 dark:text-cyan-300 rounded-full text-sm font-medium whitespace-nowrap">

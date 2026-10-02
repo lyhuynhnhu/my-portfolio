@@ -1,13 +1,45 @@
 const workExperience = [
   {
+    position: "Freelance Frontend/Mobile Developer",
+    company: "Project: Pixie Trader — Cryptocurrency Trading Mobile App",
+    location: "",
+    period: "Jan 2026 - Jul 2026",
+    responsibilities: [
+      "Developed a cross-platform React Native application for crypto trading across multiple exchanges (CCXT-compatible) connected to a NestJS backend",
+      "Integrated Socket.IO for real-time market data streaming, live ticker prices, and interactive OHLCV charts",
+      "Built dynamic UI interfaces for automated trading bots (Static step-based, Grid, and EMA crossover strategies), multi-wallet management, and customizable market watchlists with sparkline charts",
+      "Implemented adaptive layouts (Bottom Tabs for phones, Persistent Drawer for tablets) and complete multi-language support",
+      "Leveraged AI coding assistants for rapid prototyping, complex UI component generation, and efficient logic debugging. Managed code repositories and task tracking via GitLab and Redmine",
+    ],
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Redux",
+      "Socket.io",
+      "AI Tools",
+      "GitLab",
+      "Redmine",
+    ],
+    achievements: [
+      "Enhanced experience with mobile application development using React Native",
+      "Experienced with AI coding assistants for rapid prototyping and efficient logic debugging",
+      "Real time data streaming and interactive OHLCV charts",
+    ],
+  },
+  {
     position: "Frontend Developer",
     company: "VietNam Blockchain Corporation",
     location: "Ho Chi Minh City, Vietnam",
-    period: "Oct 2022 - Present",
+    period: "Oct 2022 - Dec 2025",
     responsibilities: [
       "Developing and implementing UI functionalities for product traceability, e-commerce and water industry projects",
-      "Collaborating with BA team and designers to align UI design with business objectives",
-      "Working closely with backend engineers on API integration and third-party services",
+      "Built responsive layouts using Tailwind CSS and TypeScript, maintaining strict UI fidelity aligned with Figma/UI-UX designs",
+      "Utilized Next.js (SSR/SSG) to optimize first-screen loading time, render performance, and SEO practices",
+      "Worked with BE engineers on RESTful API integrations and security best practices",
+      "Communicated directly with Business Analysts to translate business goals into technical requirements and clean system designs",
+      "Partnered with QC/QA teams to investigate edge cases, perform root-cause troubleshooting, and resolve complex production bugs",
+      "Integrated AI coding assistants (Claude Code) to streamline boilerplate creation, rapidly build  prototypes, and refactor complex logic"
     ],
     technologies: [
       "ReactJS",
@@ -33,7 +65,10 @@ const workExperience = [
     period: "Jun 2021 - Sep 2022",
     responsibilities: [
       "Implemented user interfaces and handled front-end issues",
-      "Collaborated with back-end developers to integrate APIs",
+      "Managed application state with Redux and handled form integration and asynchronous API processing via Formik and Axios",
+      "Refactored existing modules to improve code maintainability, reusability, and overall user experience",
+      "Authored comprehensive UI unit tests using Jest and React Testing Library to ensure high code reliability",
+      "Worked in an Agile/Scrum environment, participating in daily standups and sprint planning with cross-functional teams, collaborating with QC and BE teams to debug and resolve complex frontend issues"
     ],
     technologies: [
       "ReactJS",
