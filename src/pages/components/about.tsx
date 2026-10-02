@@ -91,16 +91,13 @@ const AboutSection = () => {
             About <span className="text-cyan-500 dark:text-cyan-400">Me</span>
           </h2>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            Highly motivated front-end developer with 4 years of experience building responsive and
-            user-friendly websites.
+            Highly motivated frontend developer with 5 years of experience building high-performance, responsive web and mobile applications.
           </p>
           <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-            Proven expertise in ReactJS, HTML, CSS, and TypeScript to create interactive web
-            applications. Strong problem-solving skills and a collaborative team player.
+            Proficient in ReactJS, Next.js, React Native, TypeScript, and Tailwind CSS with strong expertise in complex state management. Adept at leveraging modern AI-assisted tools to accelerate development workflows, optimize code reusability, and deliver clean, scalable architectures.
           </p>
           <p className="text-lg mb-8 leading-relaxed text-gray-700 dark:text-gray-300">
-            Eager to contribute to innovative projects and continue developing expertise to become a
-            leading programmer.
+            Eager to contribute to innovative projects and continue developing expertise to become a leading programmer.
           </p>
           {/* <button className="bg-cyan-500 dark:bg-cyan-400 text-white dark:text-slate-900 hover:bg-cyan-600 dark:hover:bg-cyan-500 px-8 py-3 text-lg font-semibold rounded-full">
             <a href="#" className="text-white dark:text-slate-900">
